@@ -38,6 +38,7 @@ class IsolateHolderService : Service() {
 
     override fun onCreate() {
         FlutterBackgroundPlugin.loadNotificationConfiguration(applicationContext)
+        startService()
     }
     
     override fun onDestroy() {
